@@ -1,4 +1,4 @@
-This is a fairly simple weather TUI. It was written more as practice than anything else. This README (after this point) was written using AI because I had no desire to actually write one myself.
+This is a fairly simple weather TUI. It was written more as practice than anything else. This README (after this point) was written using AI because I had no desire to actually write one myself. I expect exactly 0 other people to ever see this repository better yet download and run the project.
 
 # Horus Weather Terminal App
 
