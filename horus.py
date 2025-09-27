@@ -9,6 +9,7 @@ from weather import WeatherAPI, cache
 
 def get_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
+    parser.description = "Fetch and display current weather and a 7-day forecast. Data is cached for 30 minutes to reduce API calls."
     
     parser.add_argument(
         "-c",
