@@ -3,6 +3,7 @@ from rich import print
 
 import config
 import weather
+import ui.display as display
 from weather import WeatherAPI, cache
 
 
@@ -101,15 +102,7 @@ def main() -> None:
     api_client = WeatherAPI(location)
     weather_data: weather.WeatherReport = api_client.get_weather()
 
-    print(f"Weather for {location.city}, {location.state}, {location.country}")
-    print("Current:")
-    print_weather(weather_data.current)
-    input()
-    print("\n7-Day Forecast:")
-    for day in weather_data.forecast:
-        print("\n------------")
-        print_weather(day)
-        input()
+    display.display_weather_report(weather_data)
     
 
 

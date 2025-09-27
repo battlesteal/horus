@@ -42,7 +42,7 @@ class Weather:
     @staticmethod
     def _get_condition(api_conditions: str) -> cond.Condition:
         provided_conditions = api_conditions.split(", ")
-        return cond.CONDITIONS.get(provided_conditions[0], cond.Condition(description="Unknown", icon=cond.ICONS["unknown"]))
+        return cond.CONDITIONS.get(provided_conditions[0], cond.Condition(description="Unknown", desc_short="Unknown", icon=cond.ICONS["unknown"]))
 
     @classmethod
     def from_dict(cls, data: dict, weather_type: str) -> "Weather":
